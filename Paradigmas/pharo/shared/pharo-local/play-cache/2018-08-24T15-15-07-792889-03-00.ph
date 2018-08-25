@@ -1,0 +1,1 @@
+"|unBloque|unBloque:=[ :c| c isVowel and: [c isUppercase]].unBloque value:$a""(5>2) ifTrue:[^'5 es MAYOR que 2']ifFalse:[^'5 es menor que 2']."|valor tam|valor:=5>2.valor ifTrue:[^3+1] ifFalse:[^false].tam:='hola Mundo' size.tam.
