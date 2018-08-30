@@ -1,0 +1,1314 @@
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named /home/pablo/Documentos/UTN/Paradigmas/SmallTalk/pharo/pharo-vm/lib/pharo/5.0-201805090836/PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+28 August 2018 8:01:35.514009 pm
+
+VM: unix - x86_64 - linux-gnu - CoInterpreter VMMaker.oscog-eem.2380 uuid: c76d37e1-445c-4e34-9796-fc836dfd50c9 May  9 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2380 uuid: c76d37e1-445c-4e34-9796-fc836dfd50c9 May  9 2018
+VM: 201805090836 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed May 9 10:36:12 2018 CommitHash: 334be97 Plugins: 201805090836 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60542]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named /home/pablo/Documentos/UTN/Pa...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named /home/pablo/Documentos/UTN/Pa...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named /home/pablo/Documentos/UTN/Paradigmas/SmallTalk/p...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'/home/pablo/Documentos/UTN/Paradigmas/SmallTalk/pharo/pharo-vm/lib/pharo...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	nil
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+SmalltalkImage class>>startUp:
+	Receiver: SmalltalkImage
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(size 202)
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SmalltalkImage
+		classPool: 	a Dictionary(#CompilerClass->OpalCompiler #LastImagePath->'/home/pab...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Support'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SmalltalkImage)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SmalltalkImage
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:01:35.498873-03:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:01:35.498873-03:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	69
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:01:35.498873-03:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:01:35.498873-03:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:01:35.498873-03:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:01:35.498873-03:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+CurrentExecutionEnvironment class>>activate:for:
+	Receiver: CurrentExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	a DefaultExecutionEnvironment
+		arg2: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		superclass: 	ProcessLocalVariable
+		methodDict: 	a MethodDictionary(#default->CurrentExecutionEnvironment>>#default ...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CurrentExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		soleInstance: 	a CurrentExecutionEnvironment
+
+
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+	Receiver: a DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+a DefaultExecutionEnvironment
+
+DefaultExecutionEnvironment class>>beActiveDuring:
+	Receiver: DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+		superclass: 	ExecutionEnvironment
+		methodDict: 	a MethodDictionary(#prepareForNewProcess:->DefaultExecutionEnvironm...etc...
+		format: 	0
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#DefaultExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		instance: 	a DefaultExecutionEnvironment
+
+
+SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+WorldState class>>quitSession
+	Receiver: WorldState
+	Arguments and temporary variables: 
+		tmp1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#activeHand->WorldState>>#activeHand #activeHand...etc...
+		format: 	65548
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldState. OSWindowWorldState}
+		name: 	#WorldState
+		classPool: 	a Dictionary(#CanSurrenderToOS->true #DebugShowDamage->false #Deferr...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+WorldMorph(PasteUpMorph)>>windowEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(Morph)>>handleWindowEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WindowEvent>>sentTo:
+	Receiver: [windowClose ((0@0) corner: (0@0))]
+	Arguments and temporary variables: 
+		arg1: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		timeStamp: 	15456
+		source: 	nil
+		windowIndex: 	nil
+		action: 	2
+		rectangle: 	(0@0) corner: (0@0)
+
+
+WorldMorph(Morph)>>handleEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+MorphicEventDispatcher>>dispatchWindowEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleWindowEvent:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+WindowEvent>>sentTo:
+	Receiver: [windowClose ((0@0) corner: (0@0))]
+	Arguments and temporary variables: 
+		arg1: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	15456
+		source: 	nil
+		windowIndex: 	nil
+		action: 	2
+		rectangle: 	(0@0) corner: (0@0)
+
+
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ arg1 sentTo: self ]
+	Arguments and temporary variables: 
+		arg1: 	[ morph := nil ]
+		tmp1: 	nil
+		tmp2: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	48
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+WorldMorph(Morph)>>processEvent:using:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(Morph)>>processEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(58125568)
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	nil
+		arg3: 	[  ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		bounds: 	(832@97) corner: (848@113)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(832@97) corner: (848@113)
+		color: 	Color blue
+		extension: 	a MorphExtension (163880960)
+		mouseFocus: 	nil
+		keyboardFocus: 	a MenuMorph(410490368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(832@97) mouseOver 17501 nil]
+		targetOffset: 	(22.0@13.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 17501 832 97 0 0 0 1)
+		lastKeyScanCode: 	247
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>sendEvent:focus:
+	Receiver: a HandMorph(58125568)
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	nil
+	Receiver's instance variables: 
+		bounds: 	(832@97) corner: (848@113)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(832@97) corner: (848@113)
+		color: 	Color blue
+		extension: 	a MorphExtension (163880960)
+		mouseFocus: 	nil
+		keyboardFocus: 	a MenuMorph(410490368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(832@97) mouseOver 17501 nil]
+		targetOffset: 	(22.0@13.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 17501 832 97 0 0 0 1)
+		lastKeyScanCode: 	247
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SmalltalkImage class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+WorldState class>>quitSession
+WorldMorph(PasteUpMorph)>>windowEvent:
+WorldMorph(Morph)>>handleWindowEvent:
+WindowEvent>>sentTo:
+WorldMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchWindowEvent:with:
+MorphicEventDispatcher>>handleWindowEvent:
+WindowEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+WorldMorph(Morph)>>processEvent:using:
+WorldMorph(Morph)>>processEvent:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendEvent:focus:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :arg2 | 
+self activeHand: arg2.
+arg2 processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
+THERE_BE_DRAGONS_HERE
+Pharo cannot locate the sources file named /home/pablo/Documentos/UTN/Paradigmas/SmallTalk/pharo/pharo-vm/lib/pharo/5.0-201805090836/PharoV60.sources.
+
+Please check that the file is named properly and is in the
+same directory as this image.
+28 August 2018 8:02:01.820017 pm
+
+VM: unix - x86_64 - linux-gnu - CoInterpreter VMMaker.oscog-eem.2380 uuid: c76d37e1-445c-4e34-9796-fc836dfd50c9 May  9 2018
+StackToRegisterMappingCogit VMMaker.oscog-eem.2380 uuid: c76d37e1-445c-4e34-9796-fc836dfd50c9 May  9 2018
+VM: 201805090836 https://github.com/OpenSmalltalk/opensmalltalk-vm.git Date: Wed May 9 10:36:12 2018 CommitHash: 334be97 Plugins: 201805090836 https://github.com/OpenSmalltalk/opensmalltalk-vm.git
+
+Image: Pharo6.0 [Latest update: #60542]
+
+StartupUIManager>>inform:
+	Receiver: a StartupUIManager
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named /home/pablo/Documentos/UTN/Pa...etc...
+		tmp1: 	nil
+	Receiver's instance variables: 
+		doNotQuitOnRestart: 	false
+		uiManager: 	nil
+
+
+PharoFilesOpener(Object)>>inform:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate the sources file named /home/pablo/Documentos/UTN/Pa...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'the sources file named /home/pablo/Documentos/UTN/Paradigmas/SmallTalk/p...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>inform:withSourceRef:
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		arg1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+		arg2: 	'/home/pablo/Documentos/UTN/Paradigmas/SmallTalk/pharo/pharo-vm/lib/pharo...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>informCannotLocateSources
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	'Pharo cannot locate &fileRef.
+
+Please check that the file is named prope...etc...
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+PharoFilesOpener>>sourcesFileOrNil
+	Receiver: a PharoFilesOpener
+	Arguments and temporary variables: 
+		tmp1: 	nil
+	Receiver's instance variables: 
+		shouldInformAboutReadOnlyChanges: 	nil
+
+
+SourceFileArray>>ensureOpen
+	Receiver: a SourceFileArray
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		files: 	#(nil nil)
+		readOnlyQueue: 	SharedQueue with 0 items
+		flushChanges: 	true
+
+
+SmalltalkImage>>openSourceFiles
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+SmalltalkImage class>>startUp:
+	Receiver: SmalltalkImage
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(size 202)
+		format: 	65541
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#SmalltalkImage
+		classPool: 	a Dictionary(#CompilerClass->OpalCompiler #LastImagePath->'/home/pab...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'System-Support'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+ClassSessionHandler>>startup:
+	Receiver: a ClassSessionHandler(SmalltalkImage)
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		registeredClassName: 	#SmalltalkImage
+
+
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:02:01.805887-03:00
+
+
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:02:01.805887-03:00
+
+
+BlockClosure>>on:do:
+	Receiver: [ arg2 value: arg3 ]
+	Arguments and temporary variables: 
+		arg1: 	Exception
+		arg2: 	[ :arg4 | self errorHandler handleError: arg4 ]
+	Receiver's instance variables: 
+		outerContext: 	[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | sel...etc...
+		startpc: 	69
+		numArgs: 	0
+
+
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+		arg3: 	a ClassSessionHandler(SmalltalkImage)
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:02:01.805887-03:00
+
+
+Array(SequenceableCollection)>>do:
+	Receiver: an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(SmallInteger) a Cla...etc...
+
+WorkingSession>>runList:do:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	an Array(a ClassSessionHandler(GlobalIdentifier) a ClassSessionHandler(Sm...etc...
+		arg2: 	[ :arg2 | arg2 startup: arg1 ]
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:02:01.805887-03:00
+
+
+WorkingSession>>runStartup:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+<<error during printing>
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:02:01.805887-03:00
+
+
+WorkingSession>>start:
+	Receiver: a WorkingSession
+	Arguments and temporary variables: 
+		arg1: 	true
+	Receiver's instance variables: 
+		manager: 	a SessionManager
+		deferredStartupActions: 	an OrderedCollection()
+		id: 	nil
+		creationTime: 	2018-08-28T20:02:01.805887-03:00
+
+
+SessionManager>>snapshot:andQuit:
+	Receiver: a SessionManager
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+		tmp1: 	true
+		tmp2: 	true
+	Receiver's instance variables: 
+		currentSession: 	a WorkingSession
+		categories: 	an OrderedCollection(a SessionCategory(System) a SessionCategory(Ne...etc...
+		guiCategory: 	a SessionCategory(Graphical User Interface)
+		toolsCategory: 	a SessionCategory(Tools)
+		networkCategory: 	a SessionCategory(Network)
+		systemCategory: 	a SessionCategory(System)
+		userCategory: 	a SessionCategory(User)
+
+
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+CurrentExecutionEnvironment class>>activate:for:
+	Receiver: CurrentExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	a DefaultExecutionEnvironment
+		arg2: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		superclass: 	ProcessLocalVariable
+		methodDict: 	a MethodDictionary(#default->CurrentExecutionEnvironment>>#default ...etc...
+		format: 	65537
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#CurrentExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		soleInstance: 	a CurrentExecutionEnvironment
+
+
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+	Receiver: a DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+a DefaultExecutionEnvironment
+
+DefaultExecutionEnvironment class>>beActiveDuring:
+	Receiver: DefaultExecutionEnvironment
+	Arguments and temporary variables: 
+		arg1: 	[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ]
+	Receiver's instance variables: 
+		superclass: 	ExecutionEnvironment
+		methodDict: 	a MethodDictionary(#prepareForNewProcess:->DefaultExecutionEnvironm...etc...
+		format: 	0
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	nil
+		name: 	#DefaultExecutionEnvironment
+		classPool: 	a Dictionary()
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Kernel-Processes'
+		traitComposition: 	{}
+		localSelectors: 	nil
+		instance: 	a DefaultExecutionEnvironment
+
+
+SmalltalkImage>>snapshot:andQuit:
+	Receiver: Smalltalk
+	Arguments and temporary variables: 
+		arg1: 	true
+		arg2: 	true
+	Receiver's instance variables: 
+		globals: 	a SystemDictionary(lots of globals)
+		deferredStartupActions: 	an OrderedCollection()
+		specialObjectsArray: 	an Array(nil false true #Processor->Processor Bitmap Small...etc...
+		session: 	an Object
+		vm: 	a VirtualMachine
+
+
+WorldState class>>quitSession
+	Receiver: WorldState
+	Arguments and temporary variables: 
+		tmp1: 	true
+	Receiver's instance variables: 
+		superclass: 	Object
+		methodDict: 	a MethodDictionary(#activeHand->WorldState>>#activeHand #activeHand...etc...
+		format: 	65548
+		layout: 	a FixedLayout
+		instanceVariables: 	nil
+		organization: 	a ClassOrganization
+		subclasses: 	{AthensWorldState. OSWindowWorldState}
+		name: 	#WorldState
+		classPool: 	a Dictionary(#CanSurrenderToOS->true #DebugShowDamage->false #Deferr...etc...
+		sharedPools: 	an OrderedCollection()
+		environment: 	a SystemDictionary(lots of globals)
+		category: 	#'Morphic-Core-Worlds'
+		traitComposition: 	{}
+		localSelectors: 	nil
+
+
+WorldMorph(PasteUpMorph)>>windowEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(Morph)>>handleWindowEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WindowEvent>>sentTo:
+	Receiver: [windowClose ((0@0) corner: (0@0))]
+	Arguments and temporary variables: 
+		arg1: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		timeStamp: 	15456
+		source: 	nil
+		windowIndex: 	nil
+		action: 	2
+		rectangle: 	(0@0) corner: (0@0)
+
+
+WorldMorph(Morph)>>handleEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+MorphicEventDispatcher>>dispatchWindowEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+MorphicEventDispatcher>>handleWindowEvent:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+WindowEvent>>sentTo:
+	Receiver: [windowClose ((0@0) corner: (0@0))]
+	Arguments and temporary variables: 
+		arg1: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		timeStamp: 	15456
+		source: 	nil
+		windowIndex: 	nil
+		action: 	2
+		rectangle: 	(0@0) corner: (0@0)
+
+
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+BlockClosure>>ensure:
+	Receiver: [ ^ arg1 sentTo: self ]
+	Arguments and temporary variables: 
+		arg1: 	[ morph := nil ]
+		tmp1: 	nil
+		tmp2: 	nil
+	Receiver's instance variables: 
+		outerContext: 	MorphicEventDispatcher>>dispatchEvent:with:
+		startpc: 	48
+		numArgs: 	0
+
+
+MorphicEventDispatcher>>dispatchEvent:with:
+	Receiver: a MorphicEventDispatcher
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a WorldMorph(562956288) [world]
+	Receiver's instance variables: 
+		morph: 	nil
+
+
+WorldMorph(Morph)>>processEvent:using:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	a MorphicEventDispatcher
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+WorldMorph(Morph)>>processEvent:
+	Receiver: a WorldMorph(562956288) [world]
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+	Receiver's instance variables: 
+		bounds: 	(0@0) corner: (976@665)
+		owner: 	nil
+		submorphs: 	an Array(a MenuMorph(410490368) a TaskbarMorph(804941056) an ImageMo...etc...
+		fullBounds: 	(0@0) corner: (976@665)
+		color: 	(Color r: 0.295 g: 0.295 b: 0.295 alpha: 1.0)
+		extension: 	a MorphExtension (882635776) [other:  (dragEnabled -> true) (dropEna...etc...
+		borderWidth: 	0
+		borderColor: 	(Color r: 0.861 g: 1.0 b: 0.722 alpha: 1.0)
+		backgroundMorph: 	nil
+		worldState: 	a WorldState
+		griddingOn: 	nil
+		osWindow: 	nil
+		session: 	nil
+
+
+HandMorph>>sendEvent:focus:clear:
+	Receiver: a HandMorph(58125568)
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	nil
+		arg3: 	[  ]
+		tmp1: 	nil
+	Receiver's instance variables: 
+		bounds: 	(832@97) corner: (848@113)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(832@97) corner: (848@113)
+		color: 	Color blue
+		extension: 	a MorphExtension (163880960)
+		mouseFocus: 	nil
+		keyboardFocus: 	a MenuMorph(410490368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(832@97) mouseOver 17501 nil]
+		targetOffset: 	(22.0@13.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 17501 832 97 0 0 0 1)
+		lastKeyScanCode: 	247
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+HandMorph>>sendEvent:focus:
+	Receiver: a HandMorph(58125568)
+	Arguments and temporary variables: 
+		arg1: 	[windowClose ((0@0) corner: (0@0))]
+		arg2: 	nil
+	Receiver's instance variables: 
+		bounds: 	(832@97) corner: (848@113)
+		owner: 	a WorldMorph(562956288) [world]
+		submorphs: 	#()
+		fullBounds: 	(832@97) corner: (848@113)
+		color: 	Color blue
+		extension: 	a MorphExtension (163880960)
+		mouseFocus: 	nil
+		keyboardFocus: 	a MenuMorph(410490368)
+		eventListeners: 	nil
+		mouseListeners: 	nil
+		keyboardListeners: 	nil
+		mouseClickState: 	a MouseClickState[#firstClickUp]
+		mouseOverHandler: 	a MouseOverHandler
+		lastMouseEvent: 	[(832@97) mouseOver 17501 nil]
+		targetOffset: 	(22.0@13.0)
+		damageRecorder: 	a DamageRecorder
+		cacheCanvas: 	nil
+		cachedCanvasHasHoles: 	false
+		temporaryCursor: 	nil
+		temporaryCursorOffset: 	nil
+		hardwareCursor: 	nil
+		hasChanged: 	true
+		savedPatch: 	nil
+		lastEventBuffer: 	#(1 17501 832 97 0 0 0 1)
+		lastKeyScanCode: 	247
+		combinedChar: 	nil
+		eventSource: 	nil
+		lastSystemEvent: 	nil
+		captureBlock: 	nil
+		recentModifiers: 	0
+
+
+
+--- The full stack ---
+StartupUIManager>>inform:
+PharoFilesOpener(Object)>>inform:
+PharoFilesOpener>>inform:withRef:
+PharoFilesOpener>>inform:withSourceRef:
+PharoFilesOpener>>informCannotLocateSources
+PharoFilesOpener>>sourcesFileOrNil
+SourceFileArray>>ensureOpen
+SmalltalkImage>>openSourceFiles
+SmalltalkImage class>>startUp:
+ClassSessionHandler>>startup:
+[ :arg2 | arg2 startup: arg1 ] in WorkingSession>>runStartup:
+[ arg2 value: arg3 ] in [ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+BlockClosure>>on:do:
+[ :arg3 | 
+[ arg2 value: arg3 ]
+	on: Exception
+	do: [ :arg4 | self errorHandler handleError: arg4 ] ] in WorkingSession>>runList:do:
+Array(SequenceableCollection)>>do:
+WorkingSession>>runList:do:
+WorkingSession>>runStartup:
+WorkingSession>>start:
+SessionManager>>snapshot:andQuit:
+[ ^ SessionManager default snapshot: arg1 andQuit: arg2 ] in SmalltalkImage>>snapshot:andQuit:
+CurrentExecutionEnvironment class>>activate:for:
+DefaultExecutionEnvironment(ExecutionEnvironment)>>beActiveDuring:
+DefaultExecutionEnvironment class>>beActiveDuring:
+SmalltalkImage>>snapshot:andQuit:
+WorldState class>>quitSession
+WorldMorph(PasteUpMorph)>>windowEvent:
+WorldMorph(Morph)>>handleWindowEvent:
+WindowEvent>>sentTo:
+WorldMorph(Morph)>>handleEvent:
+MorphicEventDispatcher>>dispatchWindowEvent:with:
+MorphicEventDispatcher>>handleWindowEvent:
+WindowEvent>>sentTo:
+[ ^ arg1 sentTo: self ] in MorphicEventDispatcher>>dispatchEvent:with:
+BlockClosure>>ensure:
+MorphicEventDispatcher>>dispatchEvent:with:
+WorldMorph(Morph)>>processEvent:using:
+WorldMorph(Morph)>>processEvent:
+HandMorph>>sendEvent:focus:clear:
+HandMorph>>sendEvent:focus:
+ - - - - - - - - - - - - - - -  
+			- - - - - - - - - - - - - - - - - -
+HandMorph>>handleEvent:
+HandMorph>>processEventsFromQueue:
+HandMorph>>processEvents
+[ :arg2 | 
+self activeHand: arg2.
+arg2 processEvents.
+self activeHand: nil ] in WorldState>>doOneCycleNowFor:
+Array(SequenceableCollection)>>do:
+WorldState>>handsDo:
+WorldState>>doOneCycleNowFor:
+WorldState>>doOneCycleFor:
+WorldMorph>>doOneCycle
+WorldMorph class>>doOneCycle
+[ [ WorldMorph doOneCycle.
+Processor yield.
+false ] whileFalse: [  ] ] in MorphicUIManager>>spawnNewProcess
+[ self value.
+Processor terminateActive ] in BlockClosure>>newProcess
+-------------------------------------------------------------------------------
+
