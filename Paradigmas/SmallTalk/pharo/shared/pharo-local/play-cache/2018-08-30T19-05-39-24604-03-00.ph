@@ -1,0 +1,1 @@
+|cad a|a:=0.cad:='Hola COMO estas'.cad size8.5 isNumber 8.5 isInteger 

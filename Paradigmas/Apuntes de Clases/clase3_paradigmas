@@ -1,0 +1,34 @@
+un registro o una tupla es una combinnación de elementos de dos tipos y se forman tipos complejos. Se combina haciendo una unión disjunta.
+
+Mapeo: la relación que hay entre dos tipos de datos. (función).
+La idea de Mapeo se implementa en programación como un arreglo.
+También si tengo una función se podría constituir como un mapeo.
+Los subíndices pertenecen al primer conjunto, y los valores que tomará el arreglo pertenecen al segundo conjunto.
+
+f: Int->Bool f(n°)->v/f
+
+
+Recursivo: algo que se define en función a sí mismo.
+
+
+[1,2,3]
+Cabeza: 2 ; cola: [2,3] -> cabeza:2 ; cola [3] -> cabeza:3 ; cola [];
+
+
+long [] = 0;
+Long L = 1 + Long_cola (L);
+
+
+Fuertemente tipado / Débilmente tipado.
+
+Sistema de tipos monomórficos y polimórficos.
+
+Lenguaje fuertemente tipado:
+la velocidad de ejecución es mayor que el dinámico
+el programa hecho en este lenguaje será más rápido
+
+Lenguaje dinámico: 
+la administración de memoria podría ser más complejo pero podría reutilizarse al momento de cambiar los tipos de datos.
+
+
+

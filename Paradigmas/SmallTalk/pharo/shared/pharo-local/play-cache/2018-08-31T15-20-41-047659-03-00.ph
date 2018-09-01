@@ -1,0 +1,1 @@
+|f g a|a:=UIManager default request: 'ingresa un valor'.^aTranscript clear.f:= (UIManager default request: 'ingresa F') asInteger .g:= (UIManager default request: 'ingresa G') asInteger .
